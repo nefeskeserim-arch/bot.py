@@ -108,7 +108,7 @@ def home():
     """Ana sayfa - API bilgileri"""
     return Response(
         json.dumps({
-            "message": "NabiSystem API",
+            "message": "LoriaSystems API",
             "creator": "@LoriasDestek",
             "telegram_channel": "https://t.me/loriasystems",
             "available_services": list(TARGET_APIS.keys()),
