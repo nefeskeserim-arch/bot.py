@@ -109,8 +109,8 @@ def home():
     return Response(
         json.dumps({
             "message": "NabiSystem API",
-            "creator": "@sukazatkinis",
-            "telegram_channel": "https://t.me/nabisystem",
+            "creator": "@LoriasDestek",
+            "telegram_channel": "https://t.me/loriasystems",
             "available_services": list(TARGET_APIS.keys()),
             "total_services": len(TARGET_APIS)
         }, ensure_ascii=False, indent=2),
@@ -126,8 +126,8 @@ def proxy_service(service):
                 "ok": False, 
                 "error": "Böyle bir servis yok", 
                 "available": list(TARGET_APIS.keys()),
-                "creator": "@sukazatkinis",
-                "telegram": "https://t.me/nabisystem"
+                "creator": "@LoriasDestek",
+                "telegram": "https://t.me/loriasystems"
             }, ensure_ascii=False, indent=2),
             content_type="application/json; charset=utf-8",
             status=404
@@ -147,8 +147,8 @@ def proxy_service(service):
         json.dumps({
             "ok": True,
             "service": service,
-            "creator": "@sukazatkinis",
-            "telegram": "https://t.me/nabisystem",
+            "creator": "@LoriasDestek",
+            "telegram": "https://t.me/loriasystems",
             "requested_params": params,
             "response": sanitized
         }, ensure_ascii=False, indent=2),
